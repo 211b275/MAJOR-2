@@ -1,1 +1,4 @@
 # MAJOR-2
+Using data sourced from the Toronto Police (http://data.torontopolice.on.ca/pages/open-data), I construct a multi-class classification model using a Random Forest classifier to predict the type of major crime committed based on time of day, neighbourhood, division, year, month, etc. The dataset includes every major crime committed in India (https://drive.google.com/file/d/1yTXVtohcea8J43O0hYHKJpNWpNalfnyQ/view?usp=sharing), with detailed information about the location and time of offence. The data contains only categorical variables so the modeling process the crime no then the severity and all the rest, with some improvement with the latter approach.
+
+The model performs reasonably well on F1-score (precision and recall) for a five-class classification problem. Though the data set is somewhat unbalanced towards assaults (higher volume), balancing class weights does not materially impact model performance.
